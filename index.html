@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="./public/css/style.css">
+		<title>Calculadora</title>
+	</header>
+	<body>
+		<section class="section">
+			<div class="top">
+				<input id="ghost" readonly/>
+			</div>
+			<div class="middle">
+				<input id="rpta" value="0" readonly/>
+			</div>
+			<div>
+				<div class="row">
+					<button id="clear-entry" class="clear-text">CE</button>
+					<button id="clear-all" class="clear-text">C</button>
+					<button id="delete" class="delete">⌂</button>
+					<button id="division" class="arithmetic operator" value="÷">÷</button>
+				</div>
+				<div class="row">
+					<button id="n7" class="number" value="7">7</button>
+					<button id="n8" class="number" value="8">8</button>
+					<button id="n9" class="number" value="9">9</button>
+					<button id="multiplication" class="arithmetic operator" value="x">x</button>
+				</div>
+				<div class="row">
+					<button id="n4" class="number" value="4">4</button>
+					<button id="n5" class="number" value="5">5</button>
+					<button id="n6" class="number" value="6">6</button>
+					<button id="susbtraction" class="arithmetic operator" value="-">-</button>
+				</div>
+				<div class="row">
+					<button id="n1" class="number" value="1">1</button>
+					<button id="n2" class="number" value="2">2</button>
+					<button id="n3" class="number" value="3">3</button>
+					<button id="addition" class="arithmetic operator" value="+">+</button>
+				</div>
+				<div class="row">
+					<button id="more-or-less" class="operator">±</button>
+					<button id="n0" class="number" value="0">0</button>
+					<button id="point" class="operator">.</button>
+					<button id="equal" class="operator">=</button>
+				</div>
+			</div>
+		</section>
+	<script>
+					// https://es.wikipedia.org/wiki/Coma_flotante
+					const Decimal = require('decimal.js');
+					const $ = require('jquery');
+	</script>
+	<script src="./public/js/operations.js"></script>
+	</body>
+</html>
